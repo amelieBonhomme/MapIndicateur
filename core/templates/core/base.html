@@ -2,18 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}AmericanFoot{% endblock %}</title>
+    <title>{% block title %}AmericainFoot{% endblock %}</title>
+
+    <!-- Chargement du CSS -->
+    {% load static %}
     <link rel="stylesheet" href="{% static 'core/style.css' %}">
 </head>
+
 <body>
 
-    <header>
-        <h1>Mon site Django</h1>
+    <!-- HEADER GLOBAL -->
+    <header class="site-header">
+        <h1>Bienvenu sur AmericainFoot</h1>
+
+        <nav class="menu">
+            <a href="/">Accueil</a>
+            <a href="/about">À propos</a>
+            <a href="/contact">Contact</a>
+        </nav>
     </header>
 
-    <main>
+    <!-- CONTENU SPÉCIFIQUE À CHAQUE PAGE -->
+    <main class="site-content">
         {% block content %}{% endblock %}
     </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="site-footer">
+        <p>&copy; 2026 — Mon site Django</p>
+    </footer>
 
 </body>
 </html>

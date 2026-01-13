@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.site-footer {
+    background: #eee;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
